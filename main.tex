@@ -1,0 +1,188 @@
+%-------------------------
+% Resume in Latex
+% Author : igor kan
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{kotex}
+\usepackage[normalem]{ulem}   % in preamble
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+    \item\small{
+            {#1 \vspace{-2pt}}
+    }
+}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+    \begin{center}
+        \textbf{\Huge \scshape Igor Kang} \\ \vspace{1pt}
+        \small 010-3375-5331 $|$
+        \href{mailto:x@x.com}{\uline{ikanv13@gmail.com}} $|$
+        \href{https://linkedin.com/in/rocket13}{\uline{linkedin.com/in/rocket13}} $|$
+        \href{https://github.com/igorkang-smc}{\uline{github.com/igorkang-smc}} $|$
+        \href{https://igorkang.notion.site/Portfolio-25bc1bafd5148063a160eb2fd609a4f1}{\uline{portfolio}}
+    \end{center}
+
+%-----------EDUCATION-----------
+    \section{Education}
+    \resumeSubHeadingListStart
+    \resumeSubheading
+    {Lomonosov Moscow State University}{Tashkent, Uzbekistan}
+    {B.S. in Applied Mathematics and Computer Science}{Sep. 2015 – Jun. 2019}
+    \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+    \section{Experience}
+    \resumeSubHeadingListStart
+
+    \resumeSubheading
+    {Backend Developer}{Apr. 2022 – Mar. 2025}
+    {The SMC Group}{Seoul, Korea}
+    \resumeItemListStart
+    \resumeItem{Designed and deployed AI agents, chatbots, and internal AI apps, accelerating R\&D speed}
+    \resumeItem{Built scalable APIs and backends with AWS Lambda, FastAPI, Laravel, and Django, supporting 1000+ users}
+    \resumeItem{Automated infrastructure and CI/CD with K8S, AWS, Docker, and Terraform, reducing deployment time}
+    \resumeItemListEnd
+
+    \resumeSubheading
+    {Team Lead Developer}{Sep. 2021 – Feb. 2022}
+    {Taein Education Co., Ltd.}{Seongnam, Korea}
+    \resumeItemListStart
+    \resumeItem{Built core products with Java Spring Framework, contributing to improved platform stability}
+    \resumeItem{Developed responsive frontends (SPA, landing pages, back-office) using CSS, JS (jQuery), React, and Vue.js}
+    \resumeItem{Coordinated project delivery through effective collaboration with departments and clients}
+    \resumeItemListEnd
+
+    \resumeSubheading
+    {Junior Developer}{Jan. 2020 – Jan. 2021}
+    {Click Co., Ltd.}{Tashkent, Uzbekistan}
+    \resumeItemListStart
+    \resumeItem{Maintained critical payment systems and handlers, ensuring stable transaction processing}
+    \resumeItem{Provided technical support and system integration, including payment gateway testing}
+    \resumeItem{Developed and managed back-office solutions to streamline business operations}
+    \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+    \section{Projects}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+    {\textbf{Smart Space AI} $|$ \emph{Python, FastAPI, LangChain, OpenAI API, PostgreSQL, Docker}}{Jan. 2025 – Mar. 2025}
+    \resumeItemListStart
+    \resumeItem{Developed a FastAPI backend providing a REST API integrated with OpenAI and LangChain SQLAgent}
+    \resumeItem{Built and managed a unified database of bookable spaces across two company offices}
+    \resumeItem{Deployed the service and implemented CI/CD pipelines for monitoring and rapid redeployment}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+    {\textbf{Dunkin Homepage} $|$ \emph{Laravel, MySQL, AWS, Inertia.js, Git}}{Aug. 2023 – Sep. 2024}
+    \resumeItemListStart
+    \resumeItem{Developed backend with Laravel and Inertia.js, collaborating with external designers and frontend developers}
+    \resumeItem{Deployed and configured the application on AWS infrastructure, including server and database setup}
+    \resumeItem{Maintained stability and client satisfaction through continuous UI improvements and feature updates}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+    {\textbf{Baskin Robbins Homepage} $|$ \emph{AWS, PHP, JS, Git}}{Jun. 2023 – Jun. 2024}
+    \resumeItemListStart
+    \resumeItem{Maintained and extended a high-traffic website for a leading ice cream brand}
+    \resumeItem{Implemented major features such as Happy Point authentication and a customer feedback/complaint system}
+    \resumeItem{Managed deployment on AWS, ensuring stable and reliable service operation}
+    \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+    \section{Technical Skills}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+        \small{\item{
+            \textbf{Languages}{: Python, PHP, Java, SQL, NoSQL, JavaScript, HTML/CSS} \\
+            \textbf{Frameworks}{: FastAPI, Django, Laravel, React, Spring Boot} \\
+            \textbf{Developer Tools}{: Git, Docker, Kubernetes, Terraform, Redis, AWS, GraphQL, Jenkins, Prometheus, Grafana} \\
+            \textbf{Libraries}{: Django REST Framework, SQLModel, Pydantic, Uvicorn, Pytest, LangChain}
+        }}
+    \end{itemize}
+
+%-------------------------------------------
+\end{document}
